@@ -1,0 +1,43 @@
+{
+  "api": {
+    "restaurants": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "restaurants"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "restaurants": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_restaurants_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restaurants"
+        }
+      ]
+    },
+    "AMPLIFY_function_restaurants_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restaurants"
+        }
+      ]
+    }
+  }
+}

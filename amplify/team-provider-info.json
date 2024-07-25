@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyreact-dev-e8aff-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767397663392:role/amplify-amplifyreact-dev-e8aff-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767397663392:role/amplify-amplifyreact-dev-e8aff-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-amplifyreact-dev-e8aff-deployment",
+      "UnauthRoleName": "amplify-amplifyreact-dev-e8aff-unauthRole",
+      "StackName": "amplify-amplifyreact-dev-e8aff",
+      "StackId": "arn:aws:cloudformation:ap-south-1:767397663392:stack/amplify-amplifyreact-dev-e8aff/86449d90-4a44-11ef-855f-02e2c72a3b99",
+      "AmplifyAppId": "d3hhawovoen9b8"
+    },
+    "categories": {
+      "function": {
+        "restaurants": {
+          "deploymentBucketName": "amplify-amplifyreact-dev-e8aff-deployment",
+          "s3Key": "amplify-builds/restaurants-756f684234316f473276-build.zip"
+        }
+      },
+      "api": {
+        "restaurants": {}
+      }
+    }
+  }
+}
