@@ -1,4 +1,9 @@
 import { get } from 'aws-amplify/api';
+import { } from '@aws-amplify/api-rest'
+
+export type ApiResponse = {
+  success: string
+}
 
 async function getRestaurants() {
   try {
@@ -7,11 +12,11 @@ async function getRestaurants() {
       path: '/restaurants' 
     });
     const response = await restOperation.response;
-    console.log('GET call succeeded: ', response.body.json());
-    return response.body.json();
+    console.log('GET call succeeded: ', response.body.json(), response);
+    const result = await response.body.json() as ApiResponse;
+    return result;
   } catch (e) {
-    console.log('GET call failed: ', JSON.parse(e.response.body));
-    return e
+    console.log('GET call failed: ');
   }
 }
 

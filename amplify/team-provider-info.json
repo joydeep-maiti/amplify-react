@@ -20,6 +20,12 @@
       },
       "api": {
         "restaurants": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3hhawovoen9b8",
+          "type": "cicd"
+        }
       }
     }
   }
